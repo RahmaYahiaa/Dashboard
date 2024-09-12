@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Product</title>
+    <!-- MATERIAL CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f6f6f9;
+            position: relative; 
+        }
+        .container {
+            width: 60%;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+            position: relative; 
+        }
+        .back-button {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: #7380ec;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 1.5rem;
+            box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+            transition:  0.3s, transform 0.3s;
+        }
+        .back-button:hover {
+            background: #4651b3;
+            transform: scale(1.1);
+        }
+        h1 {
+            font-size: 2rem;
+            color: #363949;
+            margin-bottom: 1rem;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin: 0.5rem 0;
+            font-weight: bold;
+        }
+        input, textarea {
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ddd;
+            border-radius: 0.5rem;
+        }
+        button {
+            padding: 0.5rem;
+            background: #7380ec;
+            color: #fff;
+            border: none;
+            border-radius: 0.5rem;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+        button:hover {
+            background: #4651b3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-button">
+            <span class="material-icons-sharp">arrow_back</span>
+        </a>
+        
+        <h1>Add New Product</h1>
+        <form id="add-product-form">
+            <label for="product-name">Product Name</label>
+            <input type="text" id="product-name" name="product-name" required>
+
+            <label for="product-number">Product Number</label>
+            <input type="text" id="product-number" name="product-number" required>
+
+            <label for="description">Description</label>
+            <textarea id="description" name="description" rows="4" required></textarea>
+
+            <label for="price">Price</label>
+            <input type="text" id="price" name="price" required>
+
+            <button type="submit">Add Product</button>
+        </form>
+    </div>
+
+    <script>
+        //add product 
+        document.getElementById('add-product-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+
+            const productName = document.getElementById('product-name').value;
+            const productNumber = document.getElementById('product-number').value;
+            const description = document.getElementById('description').value;
+            const price = document.getElementById('price').value;
+
+            const newProduct = {
+                productName: productName,
+                productNumber: productNumber,
+                description: description,
+                price: price
+            };
+            alert(`${productName} added Successfully`);
+            document.getElementById('product-name').value = '';
+            document.getElementById('product-number').value = '';
+            document.getElementById('description').value = '';
+            document.getElementById('price').value = '';
+        });
+    </script>
+</body>
+</html>

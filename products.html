@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+    <!-- MATERIAL CDN -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <!-- STYLESHEET -->
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f6f6f9;
+        }
+        .container {
+            width: 80%;
+            margin: 2rem auto;
+            padding: 2rem;
+            background: #fff;
+            border-radius: 1rem;
+            box-shadow: 0 2rem 3rem rgba(132, 139, 200, 0.18);
+            position: relative; 
+        }
+        .back-button {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background: #7380ec;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            width: 3rem;
+            height: 3rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            font-size: 1.5rem;
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2);
+            text-decoration: none; 
+            transition:  0.3s, transform 0.3s;
+        }
+        .back-button:hover {
+            background: #4651b3;
+            transform: scale(1.1);
+        }
+        h1 {
+            font-size: 2rem;
+            color: #363949;
+            margin-bottom: 1rem;
+        }
+        .product-list {
+            margin-top: 2rem;
+        }
+        .product-list table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        .product-list table, .product-list th, .product-list td {
+            border: 1px solid #ddd;
+        }
+        .product-list th, .product-list td {
+            padding: 1rem;
+            text-align: left;
+        }
+        .product-list th {
+            background: #7380ec;
+            color: #fff;
+        }
+        .product-list tr:nth-child(even) {
+            background: #bdc1e7;
+        }
+        .product-list tr:hover {
+            background: #a3a8db;
+        }
+
+@media (max-width: 450px) {
+    .container {
+        width: 100%;
+        padding: 0.3rem;
+        margin-right: 0.7rem;
+    }
+
+    .back-button {
+        width: 1.8rem;
+        height: 1.8rem;
+        font-size: 1rem;
+        top: 1rem;
+        right: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.25rem;
+    }
+
+    .product-list table {
+        font-size: 0.75rem;
+    }
+
+    .product-list th, .product-list td {
+        padding: 0.5rem;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <a href="index.html" class="back-button">
+            <span class="material-icons-sharp">arrow_back</span>
+        </a>
+
+        <h1>Products</h1>
+        <div class="product-list">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Product Name</th>
+                        <th>Product Number</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- products -->
+                    <tr>
+                        <td>Foldable Mini Drone</td>
+                        <td>85631</td>
+                        <td>Compact and foldable mini drone with HD camera.</td>
+                        <td>$99.99</td>
+                    </tr>
+                    <tr>
+                        <td>LARVENDER KF102 Drone</td>
+                        <td>36378</td>
+                        <td>Drone with GPS and 4K camera for high-quality shots.</td>
+                        <td>$199.99</td>
+                    </tr>
+                    <tr>
+                        <td>Ruko F11 Pro Drone</td>
+                        <td>49347</td>
+                        <td>High-performance drone with long battery life.</td>
+                        <td>$299.99</td>
+                    </tr>
+                    <tr>
+                        <td>Drone with Camera Drone</td>
+                        <td>96996</td>
+                        <td>Drone equipped with a high-definition camera for aerial photography.</td>
+                        <td>$149.99</td>
+                    </tr>
+                    <tr>
+                        <td>GPS 4K Drone</td>
+                        <td>22821</td>
+                        <td>Advanced drone with GPS and 4K video recording capabilities.</td>
+                        <td>$249.99</td>
+                    </tr>
+                    <tr>
+                        <td>Ultra HD Drone</td>
+                        <td>54321</td>
+                        <td>Drone with ultra HD camera for professional quality footage.</td>
+                        <td>$349.99</td>
+                    </tr>
+                    <tr>
+                        <td>Mini RC Helicopter</td>
+                        <td>65432</td>
+                        <td>Small remote-controlled helicopter with easy maneuverability.</td>
+                        <td>$59.99</td>
+                    </tr>
+                    <tr>
+                        <td>Pro Flight Drone</td>
+                        <td>78901</td>
+                        <td>Professional-grade drone for expert pilots.</td>
+                        <td>$399.99</td>
+                    </tr>
+                    <tr>
+                        <td>High Speed Racer Drone</td>
+                        <td>89012</td>
+                        <td>High-speed drone designed for racing enthusiasts.</td>
+                        <td>$299.99</td>
+                    </tr>
+                    <tr>
+                        <td>Advanced Quadcopter</td>
+                        <td>90123</td>
+                        <td>Quadcopter with advanced flight features and stability control.</td>
+                        <td>$229.99</td>
+                    </tr>
+                    <tr>
+                        <td>Night Vision Drone</td>
+                        <td>12345</td>
+                        <td>Drone with night vision capabilities for low-light conditions.</td>
+                        <td>$279.99</td>
+                    </tr>
+                    <tr>
+                        <td>Long Range Drone</td>
+                        <td>23456</td>
+                        <td>Drone with extended range for long-distance flights.</td>
+                        <td>$329.99</td>
+                    </tr>
+                    <tr>
+                        <td>Foldable Racing Drone</td>
+                        <td>34567</td>
+                        <td>Compact racing drone with high-speed capabilities.</td>
+                        <td>$269.99</td>
+                    </tr>
+                    <tr>
+                        <td>Compact Drone</td>
+                        <td>45678</td>
+                        <td>Compact and easy-to-carry drone for casual use.</td>
+                        <td>$89.99</td>
+                    </tr>
+                    <tr>
+                        <td>Explorer Drone</td>
+                        <td>56789</td>
+                        <td>Drone designed for exploring and capturing scenic views.</td>
+                        <td>$219.99</td>
+                    </tr>
+                    <tr>
+                        <td>Action Camera Drone</td>
+                        <td>67890</td>
+                        <td>Drone equipped with an action camera for adventure sports.</td>
+                        <td>$159.99</td>
+                    </tr>
+                    <tr>
+                        <td>Outdoor Drone</td>
+                        <td>78901</td>
+                        <td>Durable drone designed for outdoor environments and rough conditions.</td>
+                        <td>$229.99</td>
+                    </tr>
+                    <tr>
+                        <td>Skyview Drone</td>
+                        <td>89012</td>
+                        <td>Drone with high-altitude capabilities for stunning aerial views.</td>
+                        <td>$269.99</td>
+                    </tr>
+                    <tr>
+                        <td>Professional Drone</td>
+                        <td>90123</td>
+                        <td>Top-of-the-line drone with advanced features for professionals.</td>
+                        <td>$399.99</td>
+                    </tr>
+                    <tr>
+                        <td>Beginner Drone</td>
+                        <td>12345</td>
+                        <td>Easy-to-use drone suitable for beginners.</td>
+                        <td>$79.99</td>
+                    </tr>
+                    <!-- <tr>
+                        <td>Stunt Drone</td>
+                        <td>23456</td>
+                        <td>Drone capable of performing impressive aerial stunts.</td>
+                        <td>$139.99</td>
+                    </tr> -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
