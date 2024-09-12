@@ -19,16 +19,14 @@ You can view the live demo of the dashboard [here](https://rahmayahiaa.github.io
 - **JavaScript**: Interactive elements and functionality.
 
 ## File Structure
-
-/Dashboard
-│
-├── index.html         # Main landing page of the dashboard
-├── addProduct.html    # Page for adding new products
-├── products.html      # Page to view the list of products
-├── orders.js          # JavaScript file for managing orders
-├── index.js           # Main JavaScript file for core functionality
-├── style.css          # CSS file for styling the application
-└── images/            # Folder containing images used in the project
+/Dashboard                                                                                                                                                                                  
+├── index.html # Main landing page                                                                                                
+├── addProduct.html # Page to add new products                                                        
+├── products.html # Page to view products                                                           
+├── orders.js # Script for managing orders                                                           
+├── index.js # Main JavaScript file                                                           
+├── style.css # Stylesheet for the application                                                           
+└── images/ # Folder for images                                                           
 
 
 
