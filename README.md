@@ -4,7 +4,7 @@ Welcome to the Dashboard project! This repository contains a simple and responsi
 
 ## Live Demo
 
-You can view the live demo of the dashboard [here](rahmayahiaa.github.io/Dashboard/).
+You can view the live demo of the dashboard [here](https://rahmayahiaa.github.io/Dashboard/).
 
 ## Features
 
@@ -19,6 +19,7 @@ You can view the live demo of the dashboard [here](rahmayahiaa.github.io/Dashboa
 - **JavaScript**: Interactive elements and functionality.
 
 ## File Structure
+
 /Dashboard
 │
 ├── index.html # Main landing page
